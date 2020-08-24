@@ -33,5 +33,18 @@ namespace MVCLearning.Controllers
             return View(homeDetailsViewModel);
         }
 
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(Employee empl)
+        { 
+            Employee employee = _employeeRepository.AddEmployee(empl);
+            return RedirectToAction("Details", new { id = employee.Id });
+        }
+        
     }
 }

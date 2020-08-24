@@ -108,3 +108,4 @@ C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\obj\Debug\netcoreapp3.1\Razor\Views\Home\Create.cshtml.g.cs

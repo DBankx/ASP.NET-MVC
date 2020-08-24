@@ -1,0 +1,18 @@
+﻿@model Employee
+
+@{ 
+    ViewBag.Title = "Create Employee";
+}
+
+<form asp-controller="home" asp-action="Create" method="POST" class="mt-3">
+    <label asp-for="Name">Name</label>
+    <input asp-for="Name" type="text" />
+    <label asp-for="Email">Email</label>
+    <input asp-for="Email" type="text" />
+    <label asp-for="Department">Department</label>
+    <select asp-for="Department" asp-items="Html.GetEnumSelectList<Dept>()">
+    </select>
+    <div>
+        <button class="btn btn-primary" >Create</button>
+    </div>
+</form>
