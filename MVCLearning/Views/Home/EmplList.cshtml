@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Employee>
+
+@{
+    ViewBag.Title = "Find an employee";
+}
+
+<div class="card-deck">
+    @foreach(var empl in Model)
+    {
+        <div class="card m-3">
+            <div class="card-header">
+                <h3>@empl.Name</h3>
+            </div>
+            <div class="card-footer text-center">
+                <a href="#" class="btn btn-primary">View</a>
+                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    }
+</div>
