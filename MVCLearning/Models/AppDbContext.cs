@@ -14,6 +14,8 @@ namespace MVCLearning.Models
         }
 
         public DbSet<Employee> Employees { get; set; }
+
+        //Adding seed data to the database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Employee>().HasData(
