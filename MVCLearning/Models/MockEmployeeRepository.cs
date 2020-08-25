@@ -47,5 +47,31 @@ namespace MVCLearning.Models
         {
             return _employeeList;
         }
+
+        public Employee Update(Employee employeeChanges)
+        {
+            Employee empl = _employeeList.FirstOrDefault(e => e.Id == employeeChanges.Id);
+
+            if(empl != null)
+            {
+                empl.Name = employeeChanges.Name;
+                empl.Email = employeeChanges.Email;
+                empl.Department = employeeChanges.Department;
+            }
+
+            return empl;
+        }
+
+        public Employee Delete(int id)
+        {
+            Employee empl = _employeeList.FirstOrDefault(e => e.Id == id);
+
+            if (empl != null)
+            {
+                _employeeList.Remove(empl);
+            }
+
+            return empl;
+        }
     }
 }

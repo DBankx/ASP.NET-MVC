@@ -10,6 +10,8 @@ namespace MVCLearning.Models
         Employee GetEmployee(int Id);
         IEnumerable<Employee> GetAllEmployees();
         Employee AddEmployee(Employee empl);
+        Employee Update(Employee employeeChanges);
+        Employee Delete(int id);
 
     }
 }

@@ -41,9 +41,13 @@ namespace MVCLearning.Controllers
 
         [HttpPost]
         public ActionResult Create(Employee empl)
-        { 
+        {
+            if (ModelState.IsValid) { 
             Employee employee = _employeeRepository.AddEmployee(empl);
-            return RedirectToAction("Details", new { id = employee.Id });
+            //return RedirectToAction("Details", new { id = employee.Id });
+            }
+                return View();
+            
         }
         
     }
