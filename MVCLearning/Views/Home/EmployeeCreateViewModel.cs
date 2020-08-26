@@ -1,16 +1,17 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using MVCLearning.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MVCLearning.Models
+namespace MVCLearning.Views.Home
 {
-    public class Employee
+    public class EmployeeCreateViewModel
     {
-        public int Id { get; set; }
         [Required]
-        [MaxLength(50, ErrorMessage ="Name cannot exceed 50 chars")]
+        [MaxLength(50, ErrorMessage = "Name cannot exceed 50 chars")]
         public string Name { get; set; }
         [Display(Name = "Office Email")]
         [Required]
@@ -18,6 +19,6 @@ namespace MVCLearning.Models
         public string Email { get; set; }
         [Required]
         public Dept? Department { get; set; }
-        public string Photo { get; set; }
+        public IFormFile Photos { get; set; }
     }
 }

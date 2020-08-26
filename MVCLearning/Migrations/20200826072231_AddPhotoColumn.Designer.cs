@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVCLearning.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200825214733_AddPhotoPathColumn")]
-    partial class AddPhotoPathColumn
+    [Migration("20200826072231_AddPhotoColumn")]
+    partial class AddPhotoColumn
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,7 +39,7 @@ namespace MVCLearning.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<string>("PhotoPath")
+                    b.Property<string>("Photo")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

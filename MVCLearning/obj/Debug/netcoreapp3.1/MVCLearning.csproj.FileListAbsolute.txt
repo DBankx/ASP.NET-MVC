@@ -148,3 +148,4 @@ C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\bin\Debug\netcoreapp3.1\runtimes\w
 C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\obj\Debug\netcoreapp3.1\MVCLearning.csproj.CoreCompileInputs.cache
 C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\obj\Debug\netcoreapp3.1\MVCLearning.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs

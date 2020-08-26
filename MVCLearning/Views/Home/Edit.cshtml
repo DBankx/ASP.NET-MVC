@@ -1,9 +1,15 @@
-﻿@model MVCLearning.Views.Home.EmployeeCreateViewModel
-@{ 
-    ViewBag.Title = "Create Employee";
+﻿@model EmployeeEditViewModel
+
+@{
+    ViewData["Title"] = "Edit Employee";
+    var photoPath = "~/Images/" + (Model.ExistingPhotoPath ?? "pic 11.jpg");
 }
 
-<form enctype="multipart/form-data" asp-controller="home" asp-action="Create" method="POST" class="mt-3">
+<h1>Edit</h1>
+
+<form enctype="multipart/form-data" asp-controller="home" asp-action="edit" method="POST" class="mt-3">
+    <input hidden asp-for="Id" />
+    <input hidden asp-for="ExistingPhotoPath" />
     <label asp-for="Name">Name</label>
     <input asp-for="Name" type="text" />
     <span asp-validation-for="Name" class="text-danger"></span>
@@ -18,10 +24,12 @@
     <div asp-validation-summary="All" class="text-danger"></div>
     <div class="custom-file">
         <input asp-for="Photos" class="custom-file-input" multiple />
-        <label asp-for="Photos" class="custom-file-label">Choose File...</label>
+        <label asp-for="Photos" class="custom-file-label">Click here to change photo</label>
     </div>
+    <img src="@photoPath" alt="user image" class="imageThumbnail" asp-append-version="true" />
     <div>
-        <button class="btn btn-primary">Create</button>
+        <button class="btn btn-primary">Update</button>
+        <a asp-controller="home" asp-action="index" class="btn btn-danger">Cancel</a>
     </div>
-   
+
 </form>

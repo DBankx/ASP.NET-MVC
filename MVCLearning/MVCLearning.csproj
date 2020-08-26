@@ -10,6 +10,8 @@
     <Compile Remove="Migrations\20200825212946_AddPhotoPathColumn.Designer.cs" />
     <Compile Remove="Migrations\20200825213217_AddSomeProperty.cs" />
     <Compile Remove="Migrations\20200825213217_AddSomeProperty.Designer.cs" />
+    <Compile Remove="Migrations\20200825214733_AddPhotoPathColumn.cs" />
+    <Compile Remove="Migrations\20200825214733_AddPhotoPathColumn.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

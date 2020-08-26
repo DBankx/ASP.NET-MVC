@@ -2,12 +2,12 @@
 
 namespace MVCLearning.Migrations
 {
-    public partial class AddPhotoPathColumn : Migration
+    public partial class AddPhotoColumn : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "PhotoPath",
+                name: "Photo",
                 table: "Employees",
                 nullable: true);
         }
@@ -15,7 +15,7 @@ namespace MVCLearning.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "PhotoPath",
+                name: "Photo",
                 table: "Employees");
         }
     }
