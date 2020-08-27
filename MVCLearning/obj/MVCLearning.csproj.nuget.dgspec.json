@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Desktop\\c#\\MVCStart\\MVCLearning\\MVCLearning.csproj": {}
+    "C:\\Users\\Asus\\desktop\\c#\\mvcstart\\mvclearning\\MVCLearning.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Desktop\\c#\\MVCStart\\MVCLearning\\MVCLearning.csproj": {
+    "C:\\Users\\Asus\\desktop\\c#\\mvcstart\\mvclearning\\MVCLearning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\c#\\MVCStart\\MVCLearning\\MVCLearning.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\desktop\\c#\\mvcstart\\mvclearning\\MVCLearning.csproj",
         "projectName": "MVCLearning",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\c#\\MVCStart\\MVCLearning\\MVCLearning.csproj",
+        "projectPath": "C:\\Users\\Asus\\desktop\\c#\\mvcstart\\mvclearning\\MVCLearning.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\c#\\MVCStart\\MVCLearning\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\desktop\\c#\\mvcstart\\mvclearning\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.7, )"

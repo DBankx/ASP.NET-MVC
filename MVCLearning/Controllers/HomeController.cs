@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Hosting;
 using System.IO;
 using Microsoft.AspNetCore.Http;
 
+
 namespace MVCLearning.Controllers
 {
     public class HomeController : Controller
@@ -25,14 +26,23 @@ namespace MVCLearning.Controllers
 
         public ActionResult Index()
         {
-           return View("emplList", _employeeRepository.GetAllEmployees());
+            return View("emplList", _employeeRepository.GetAllEmployees());
         }
 
         public ActionResult Details(int? id)
         {
+
+            Employee employee = _employeeRepository.GetEmployee(id.Value);
+
+            if (employee == null)
+            {
+                Response.StatusCode = 404;
+                return View("EmployeeNotFound", id.Value);
+            }
+
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
-                Employee = _employeeRepository.GetEmployee(id??1),
+                Employee = employee,
                 PageTitle = "Details View"
             };
 
@@ -48,23 +58,24 @@ namespace MVCLearning.Controllers
         [HttpPost]
         public ActionResult Create(EmployeeCreateViewModel model)
         {
-            if (ModelState.IsValid) {
+            if (ModelState.IsValid)
+            {
                 string uniqueFileName = ProcessUploadedFile(model);
 
-            Employee newEmployee = new Employee
-            {
-                Name = model.Name,
-                Email = model.Email,
-                Department = model.Department,
-                Photo = uniqueFileName
-            };
-        
+                Employee newEmployee = new Employee
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Department = model.Department,
+                    Photo = uniqueFileName
+                };
+
 
                 _employeeRepository.AddEmployee(newEmployee);
-            return RedirectToAction("Details", new { id = newEmployee.Id });
+                return RedirectToAction("Details", new { id = newEmployee.Id });
             }
-                return View();
-            
+            return View();
+
         }
 
         [HttpGet]
@@ -95,9 +106,10 @@ namespace MVCLearning.Controllers
                 employee.Name = model.Name;
                 employee.Email = model.Email;
                 employee.Department = model.Department;
-                if(model.Photos != null) { 
-                string uniqueFileName = ProcessUploadedFile(model);
-                    if(model.ExistingPhotoPath != null)
+                if (model.Photos != null)
+                {
+                    string uniqueFileName = ProcessUploadedFile(model);
+                    if (model.ExistingPhotoPath != null)
                     {
                         string filepath = Path.Combine(hostingEnviroment.WebRootPath, "images", model.ExistingPhotoPath);
                         System.IO.File.Delete(filepath);
@@ -111,6 +123,7 @@ namespace MVCLearning.Controllers
             return View();
         }
 
+
         private string ProcessUploadedFile(EmployeeCreateViewModel model)
         {
             string uniqueFileName = null;
@@ -122,13 +135,14 @@ namespace MVCLearning.Controllers
                 uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Photos.FileName;
                 //upload the file into the db
                 string filePath = Path.Combine(uploadFolder, uniqueFileName);
-                using(var fileStream = new FileStream(filePath, FileMode.Create)) { 
-                model.Photos.CopyTo(fileStream);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.Photos.CopyTo(fileStream);
                 }
             }
 
             return uniqueFileName;
         }
     }
-        
- }
+
+}

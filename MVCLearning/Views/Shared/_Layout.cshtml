@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@inject SignInManager<IdentityUser> signInManager;
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -30,6 +32,24 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-action="Create" asp-controller="home">Create</a>
                         </li>
+                            @if(signInManager.IsSignedIn(User)){
+                                 <li class="nav-item ">
+                                     <form asp-action="logout" asp-controller="account" method="post">
+                                         <button type="submit" class="nav-link btn btn-link py-0" style="width: auto"> 
+                                             Logout @User.Identity.Name
+                                         </button>
+                                     </form>
+                        </li>
+                            } 
+                            else
+                             {
+                                 <li class="nav-item ">
+                            <a class="nav-link" asp-action="Register" asp-controller="account">Register</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" asp-action="Login" asp-controller="account">Login</a>
+                        </li>
+                            }
                     </ul>
                 </div>
             </div>

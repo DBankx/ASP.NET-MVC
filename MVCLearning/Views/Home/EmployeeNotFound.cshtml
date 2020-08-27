@@ -1,0 +1,12 @@
+﻿@model int
+@{
+    ViewData["Title"] = "Employee Not Found";
+}
+
+<div class="msg">
+    <h1>Employee not found</h1>
+    <p>Employee with id=@Model not found</p>
+    <a class="btn btn-primary" asp-controller="home" asp-action="index">View List of Employees</a>
+</div>
+
+

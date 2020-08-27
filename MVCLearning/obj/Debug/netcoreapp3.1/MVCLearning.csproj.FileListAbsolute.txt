@@ -149,3 +149,13 @@ C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\bin\Debug\netcoreapp3.1\Microsoft.
 C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\obj\Debug\netcoreapp3.1\MVCLearning.csproj.CoreCompileInputs.cache
 C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\obj\Debug\netcoreapp3.1\MVCLearning.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs
+C:\Users\Asus\Desktop\c#\MVCStart\MVCLearning\obj\Debug\netcoreapp3.1\Razor\Views\Home\EmployeeNotFound.cshtml.g.cs
+C:\Users\Asus\desktop\c#\mvcstart\mvclearning\obj\Debug\netcoreapp3.1\Razor\Views\Shared\NotFound.cshtml.g.cs
+C:\Users\Asus\desktop\c#\mvcstart\mvclearning\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Asus\desktop\c#\mvcstart\mvclearning\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Asus\desktop\c#\mvcstart\mvclearning\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Asus\desktop\c#\mvcstart\mvclearning\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Asus\desktop\c#\mvcstart\mvclearning\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Asus\desktop\c#\mvcstart\mvclearning\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Asus\desktop\c#\mvcstart\mvclearning\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Asus\desktop\c#\mvcstart\mvclearning\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
