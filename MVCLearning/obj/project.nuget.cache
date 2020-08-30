@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HUMpjQgMDGVuh9Wo9Dh8bznUfHokCDSqLTV16JpRKlkHPCONZY0VF6/E8l8l6S0a/YnOP9Ypbc4ZrT3NwEvj/A==",
+  "dgSpecHash": "u+afk6AJ+hRDn2DIhas824Rj5ZWW+26pi0jwRLw2U5lZfkWf4dBfTJKGxzgCHpaDMF8N+bWgEuczxO4WnHO0dQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\desktop\\c#\\mvcstart\\mvclearning\\MVCLearning.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\c#\\MVCStart\\MVCLearning\\MVCLearning.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

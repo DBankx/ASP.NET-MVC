@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\desktop\\c#\\mvcstart\\mvclearning\\MVCLearning.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\c#\\MVCStart\\MVCLearning\\MVCLearning.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\desktop\\c#\\mvcstart\\mvclearning\\MVCLearning.csproj": {
+    "C:\\Users\\Asus\\Desktop\\c#\\MVCStart\\MVCLearning\\MVCLearning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\desktop\\c#\\mvcstart\\mvclearning\\MVCLearning.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\c#\\MVCStart\\MVCLearning\\MVCLearning.csproj",
         "projectName": "MVCLearning",
-        "projectPath": "C:\\Users\\Asus\\desktop\\c#\\mvcstart\\mvclearning\\MVCLearning.csproj",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\c#\\MVCStart\\MVCLearning\\MVCLearning.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\desktop\\c#\\mvcstart\\mvclearning\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\c#\\MVCStart\\MVCLearning\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

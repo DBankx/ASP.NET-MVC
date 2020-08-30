@@ -9,7 +9,7 @@ using MVCLearning.Views.Home;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
 using Microsoft.AspNetCore.Http;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace MVCLearning.Controllers
 {
@@ -49,13 +49,16 @@ namespace MVCLearning.Controllers
             return View(homeDetailsViewModel);
         }
 
+        
         [HttpGet]
+        [Authorize]
         public ActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
+        [Authorize]
         public ActionResult Create(EmployeeCreateViewModel model)
         {
             if (ModelState.IsValid)
@@ -78,7 +81,9 @@ namespace MVCLearning.Controllers
 
         }
 
+       
         [HttpGet]
+        [Authorize]
         public IActionResult Edit(int id)
         {
             //find the user
@@ -97,7 +102,9 @@ namespace MVCLearning.Controllers
             return View(employeeVM);
         }
 
+       
         [HttpPost]
+        [Authorize]
         public IActionResult Edit(EmployeeEditViewModel model)
         {
             if (ModelState.IsValid)
